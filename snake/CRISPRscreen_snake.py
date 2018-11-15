@@ -8,6 +8,7 @@ raw_dir = os.path.join(proj_dir, "data", "01.cleandata")
 work_dir = os.path.join(proj_dir, "results")
 script_dir = os.path.join(proj_dir, "scripts")
 sampName = os.path.join(base, "anno", "GuoD_CRISPRsamples_info.csv")
+gmt = os.path.join(base, "anno", "msigdb.v6.2.symbols.gmt")
 adapter_5 = "GTGGAAAGGACGAAACACCG"
 adapter_3 = "GTTTTAGAG"
 fuzzy_adapter3 = "TTTAGAG"
@@ -28,6 +29,7 @@ rule all:
         expand("%s/count/{sample}.screen_A.csv" % work_dir, sample = sample),
         expand("%s/run_qc/{condition}_cdf.pdf" % work_dir, condition = cond),
         expand("%s/run_mageck/{condition}/{condition}.A.tsv" % work_dir, condition = cond),
+        expand("%s/run_pathway/{condition}/{condition}.pathway_summary.txt" % work_dir, condition = cond),
 
 
 rule fastqc:
@@ -172,3 +174,14 @@ rule run_mageck:
         shell(Rcommand)
         print(Mcommand)
         shell(Mcommand)
+
+rule run_pathway:
+    input:
+        gene = "%s/run_mageck/{condition}/{condition}.gene_summary.txt" % work_dir,
+        gmt = gmt
+    output:
+        "%s/run_pathway/{condition}/{condition}.pathway_summary.txt" % work_dir,
+    shell:
+        """
+        mageck pathway --gene-ranking {input.gene} --gmt-file {input.gmt} --sort-criteria pos
+        """
