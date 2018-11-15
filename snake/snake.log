@@ -1,0 +1,81 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 432
+Job counts:
+	count	jobs
+	1	all
+	9	run_mageck
+	10
+
+rule run_mageck:
+    input: /data1/zhoulab/yuxinghai/CMZ_lab/GuoD/1st/results/count/ZaA8r4.screen_A.csv, /data1/zhoulab/yuxinghai/CMZ_lab/GuoD/1st/results/count/aCon.screen_A.csv, /data1/zhoulab/yuxinghai/CMZ_lab/GuoD/anno/GuoD_CRISPRsamples_info.csv
+    output: /data1/zhoulab/yuxinghai/CMZ_lab/GuoD/1st/results/run_mageck/ZaA8r4.A.csv, /data1/zhoulab/yuxinghai/CMZ_lab/GuoD/1st/results/run_mageck/ZaA8r4.gene_summary_txt, /data1/zhoulab/yuxinghai/CMZ_lab/GuoD/1st/results/run_mageck/ZaA8r4.sgrna_summary_txt
+    jobid: 43
+    wildcards: condition=ZaA8r4
+
+Submitted job 43 with external jobid '918959.mu01'.
+
+rule run_mageck:
+    input: /data1/zhoulab/yuxinghai/CMZ_lab/GuoD/1st/results/count/ZaA7r2.screen_A.csv, /data1/zhoulab/yuxinghai/CMZ_lab/GuoD/1st/results/count/aCon.screen_A.csv, /data1/zhoulab/yuxinghai/CMZ_lab/GuoD/anno/GuoD_CRISPRsamples_info.csv
+    output: /data1/zhoulab/yuxinghai/CMZ_lab/GuoD/1st/results/run_mageck/ZaA7r2.A.csv, /data1/zhoulab/yuxinghai/CMZ_lab/GuoD/1st/results/run_mageck/ZaA7r2.gene_summary_txt, /data1/zhoulab/yuxinghai/CMZ_lab/GuoD/1st/results/run_mageck/ZaA7r2.sgrna_summary_txt
+    jobid: 24
+    wildcards: condition=ZaA7r2
+
+Submitted job 24 with external jobid '918960.mu01'.
+
+rule run_mageck:
+    input: /data1/zhoulab/yuxinghai/CMZ_lab/GuoD/1st/results/count/EaA5r3.screen_A.csv, /data1/zhoulab/yuxinghai/CMZ_lab/GuoD/1st/results/count/aCon.screen_A.csv, /data1/zhoulab/yuxinghai/CMZ_lab/GuoD/anno/GuoD_CRISPRsamples_info.csv
+    output: /data1/zhoulab/yuxinghai/CMZ_lab/GuoD/1st/results/run_mageck/EaA5r3.A.csv, /data1/zhoulab/yuxinghai/CMZ_lab/GuoD/1st/results/run_mageck/EaA5r3.gene_summary_txt, /data1/zhoulab/yuxinghai/CMZ_lab/GuoD/1st/results/run_mageck/EaA5r3.sgrna_summary_txt
+    jobid: 25
+    wildcards: condition=EaA5r3
+
+Submitted job 25 with external jobid '918961.mu01'.
+
+rule run_mageck:
+    input: /data1/zhoulab/yuxinghai/CMZ_lab/GuoD/1st/results/count/ZaA8r2.screen_A.csv, /data1/zhoulab/yuxinghai/CMZ_lab/GuoD/1st/results/count/aCon.screen_A.csv, /data1/zhoulab/yuxinghai/CMZ_lab/GuoD/anno/GuoD_CRISPRsamples_info.csv
+    output: /data1/zhoulab/yuxinghai/CMZ_lab/GuoD/1st/results/run_mageck/ZaA8r2.A.csv, /data1/zhoulab/yuxinghai/CMZ_lab/GuoD/1st/results/run_mageck/ZaA8r2.gene_summary_txt, /data1/zhoulab/yuxinghai/CMZ_lab/GuoD/1st/results/run_mageck/ZaA8r2.sgrna_summary_txt
+    jobid: 64
+    wildcards: condition=ZaA8r2
+
+Submitted job 64 with external jobid '918962.mu01'.
+
+rule run_mageck:
+    input: /data1/zhoulab/yuxinghai/CMZ_lab/GuoD/1st/results/count/RhA3r4.screen_A.csv, /data1/zhoulab/yuxinghai/CMZ_lab/GuoD/1st/results/count/hCon2.screen_A.csv, /data1/zhoulab/yuxinghai/CMZ_lab/GuoD/anno/GuoD_CRISPRsamples_info.csv
+    output: /data1/zhoulab/yuxinghai/CMZ_lab/GuoD/1st/results/run_mageck/RhA3r4.A.csv, /data1/zhoulab/yuxinghai/CMZ_lab/GuoD/1st/results/run_mageck/RhA3r4.gene_summary_txt, /data1/zhoulab/yuxinghai/CMZ_lab/GuoD/1st/results/run_mageck/RhA3r4.sgrna_summary_txt
+    jobid: 70
+    wildcards: condition=RhA3r4
+
+Submitted job 70 with external jobid '918963.mu01'.
+
+rule run_mageck:
+    input: /data1/zhoulab/yuxinghai/CMZ_lab/GuoD/1st/results/count/RaA4r3.screen_A.csv, /data1/zhoulab/yuxinghai/CMZ_lab/GuoD/1st/results/count/aCon.screen_A.csv, /data1/zhoulab/yuxinghai/CMZ_lab/GuoD/anno/GuoD_CRISPRsamples_info.csv
+    output: /data1/zhoulab/yuxinghai/CMZ_lab/GuoD/1st/results/run_mageck/RaA4r3.A.csv, /data1/zhoulab/yuxinghai/CMZ_lab/GuoD/1st/results/run_mageck/RaA4r3.gene_summary_txt, /data1/zhoulab/yuxinghai/CMZ_lab/GuoD/1st/results/run_mageck/RaA4r3.sgrna_summary_txt
+    jobid: 3
+    wildcards: condition=RaA4r3
+
+Submitted job 3 with external jobid '918964.mu01'.
+
+rule run_mageck:
+    input: /data1/zhoulab/yuxinghai/CMZ_lab/GuoD/1st/results/count/RhA2r4_ATAGCGTC.screen_A.csv, /data1/zhoulab/yuxinghai/CMZ_lab/GuoD/1st/results/count/RhA2r4_TCGCCTTG.screen_A.csv, /data1/zhoulab/yuxinghai/CMZ_lab/GuoD/1st/results/count/hCon2.screen_A.csv, /data1/zhoulab/yuxinghai/CMZ_lab/GuoD/anno/GuoD_CRISPRsamples_info.csv
+    output: /data1/zhoulab/yuxinghai/CMZ_lab/GuoD/1st/results/run_mageck/RhA2r4.A.csv, /data1/zhoulab/yuxinghai/CMZ_lab/GuoD/1st/results/run_mageck/RhA2r4.gene_summary_txt, /data1/zhoulab/yuxinghai/CMZ_lab/GuoD/1st/results/run_mageck/RhA2r4.sgrna_summary_txt
+    jobid: 51
+    wildcards: condition=RhA2r4
+
+Submitted job 51 with external jobid '918965.mu01'.
+
+rule run_mageck:
+    input: /data1/zhoulab/yuxinghai/CMZ_lab/GuoD/1st/results/count/RhA2r2.screen_A.csv, /data1/zhoulab/yuxinghai/CMZ_lab/GuoD/1st/results/count/hCon2.screen_A.csv, /data1/zhoulab/yuxinghai/CMZ_lab/GuoD/anno/GuoD_CRISPRsamples_info.csv
+    output: /data1/zhoulab/yuxinghai/CMZ_lab/GuoD/1st/results/run_mageck/RhA2r2.A.csv, /data1/zhoulab/yuxinghai/CMZ_lab/GuoD/1st/results/run_mageck/RhA2r2.gene_summary_txt, /data1/zhoulab/yuxinghai/CMZ_lab/GuoD/1st/results/run_mageck/RhA2r2.sgrna_summary_txt
+    jobid: 12
+    wildcards: condition=RhA2r2
+
+Submitted job 12 with external jobid '918966.mu01'.
+
+rule run_mageck:
+    input: /data1/zhoulab/yuxinghai/CMZ_lab/GuoD/1st/results/count/EaA6r4.screen_A.csv, /data1/zhoulab/yuxinghai/CMZ_lab/GuoD/1st/results/count/aCon.screen_A.csv, /data1/zhoulab/yuxinghai/CMZ_lab/GuoD/anno/GuoD_CRISPRsamples_info.csv
+    output: /data1/zhoulab/yuxinghai/CMZ_lab/GuoD/1st/results/run_mageck/EaA6r4.A.csv, /data1/zhoulab/yuxinghai/CMZ_lab/GuoD/1st/results/run_mageck/EaA6r4.gene_summary_txt, /data1/zhoulab/yuxinghai/CMZ_lab/GuoD/1st/results/run_mageck/EaA6r4.sgrna_summary_txt
+    jobid: 18
+    wildcards: condition=EaA6r4
+
+Submitted job 18 with external jobid '918967.mu01'.
+snake.sh: 行 2: 17046 已杀死               snakemake -s CRISPRscreen_snake.py --cluster "qsub -l nodes=1:ppn={threads} -q all -V -S /bin/bash -p 1000" --jobs 432 --keep-going --rerun-incomplete -R --max-jobs-per-second 432 -p
